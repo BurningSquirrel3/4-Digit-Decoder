@@ -1,0 +1,61 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    Console.WriteLine ("What is the First Digit:");
+		string A = Console.ReadLine();
+		Console.WriteLine ("What is the Second Digit:");
+		string B = Console.ReadLine();
+		Console.WriteLine ("What is the Third Digit:");
+		string C = Console.ReadLine();
+		Console.WriteLine ("What is the Fourth Digit:");
+		string D = Console.ReadLine();
+
+		if (A == "0" || A == "1" || A == "2" || A == "3" || A == "4" || A == "5" || A == "6" || A == "7" || A == "8" || A == "9") {
+			if (B == "0" || B == "1" || B == "2" || B == "3" || B == "4" || B == "5" || B == "6" || B == "7" || B == "8" || B == "9") {
+				if (C == "0" || C == "1" || C == "2" || C == "3" || C == "4" || C == "5" || C == "6" || C == "7" || C == "8" || C == "9") {
+					if (D == "0" || D == "1" || D == "2" || D == "3" || D == "4" || D == "5" || D == "6" || D == "7" || D == "8" || D == "9") {
+						Console.WriteLine ("\n"+A+B+C+D);
+						Console.WriteLine (A+B+D+C);
+						Console.WriteLine (A+C+B+D);
+						Console.WriteLine (A+C+D+B);
+						Console.WriteLine (A+D+B+C);
+						Console.WriteLine (A+D+C+B);
+						Console.WriteLine ("\n"+B+A+C+D);
+						Console.WriteLine (B+A+D+C);
+						Console.WriteLine (B+C+A+D);
+						Console.WriteLine (B+C+D+A);
+						Console.WriteLine (B+D+A+C);
+						Console.WriteLine (B+D+C+A);
+						Console.WriteLine ("\n"+C+A+B+D);
+						Console.WriteLine (C+A+D+B);
+						Console.WriteLine (C+B+A+D);
+						Console.WriteLine (C+B+D+A);
+						Console.WriteLine (C+D+A+B);
+						Console.WriteLine (C+D+B+A);
+						Console.WriteLine ("\n"+D+A+B+C);
+						Console.WriteLine (D+A+C+B);
+						Console.WriteLine (D+B+A+C);
+						Console.WriteLine (D+B+C+A);
+						Console.WriteLine (D+C+A+B);
+						Console.WriteLine (D+C+B+A);
+					}
+					else{
+						Console.WriteLine("\nError. You didn't enter a digit that is valid.");
+					}
+				}
+				else{
+					Console.WriteLine("\nError. You didn't enter a digit that is valid.");
+				}
+			}
+			else{
+				Console.WriteLine("\nError. You didn't enter a digit that is valid.");
+			}
+		}
+		else{
+			Console.WriteLine("\nError. You didn't enter a digit that is valid.");
+		}
+		
+  }
+}
+
